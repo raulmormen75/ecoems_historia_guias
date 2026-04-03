@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Verificación Historia Anomalías</title>
+  <style>
+    html,body,iframe{margin:0;width:100%;height:100%;border:0;background:#f4f1e8}
+  </style>
+</head>
+<body>
+  <iframe id="app" src="index-historia.html?v=verify-anomaly"></iframe>
+  <script>
+    const frame = document.getElementById('app');
+    frame.addEventListener('load', () => {
+      setTimeout(() => {
+        const doc = frame.contentDocument;
+        doc.querySelector('[data-action="guide"][data-guide="guia-2"]')?.click();
+        doc.querySelector('[data-action="topic"][data-topic="nueva-espana"]')?.click();
+      }, 900);
+      setTimeout(() => {
+        const doc = frame.contentDocument;
+        doc.querySelector('[data-action="pick-option"][data-id="g2-r60"][data-option="C"]')?.click();
+      }, 1800);
+      setTimeout(() => {
+        const doc = frame.contentDocument;
+        doc.getElementById('reactivo-g2-r60')?.scrollIntoView({ behavior: 'instant', block: 'start' });
+      }, 2600);
+    });
+  </script>
+</body>
+</html>

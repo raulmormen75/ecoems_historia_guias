@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>IFR | Historia</title>
+  <meta
+    name="description"
+    content="Aplicación de práctica para Historia ECOEMS 2026 con pista, reintento y análisis desbloqueable solo después del acierto."
+  >
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="historia-styles.css?v=20260403a">
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <div class="brand">
+        <img src="escudo-ifr-real.jpg" alt="Escudo del Instituto Fernando Ramírez">
+        <div>
+          <strong>Instituto Fernando Ramírez</strong>
+          <small>ECOEMS 2026</small>
+          <span>Historia · práctica guiada y razonada</span>
+        </div>
+      </div>
+      <div class="top-stats" id="topStats"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="topAnchor">
+      <div class="hero-copy">
+        <div class="hero-intro">
+          <span class="pill">Guías 1 y 2 · Historia</span>
+          <h1>Practica Historia ECOEMS con el orden real de las dos guías.</h1>
+        </div>
+        <p class="lead">
+          Cada reactivo conserva su guía, su número y su secuencia original. La pista orienta sin regalar la respuesta,
+          el reintento te devuelve al planteamiento y el análisis completo solo se abre cuando ya resolviste bien.
+        </p>
+
+        <div class="guide-notes">
+          <article class="note">
+            <h3>Qué encontrarás 🧭</h3>
+            <p>Los 24 reactivos de Historia, del 53 al 64 en ambas guías, sin mezclar su orden ni simplificar el contenido fuente.</p>
+          </article>
+          <article class="note">
+            <h3>Cómo practicar 🧠</h3>
+            <p>Primero eliges una opción, luego puedes abrir la pista si hace falta y, si fallas, vuelves a intentar sin ver la correcta.</p>
+          </article>
+          <article class="note">
+            <h3>Qué se desbloquea ✅</h3>
+            <p>Después del acierto se muestran qué pide resolver el reactivo, por qué la correcta sí corresponde y por qué las demás no.</p>
+          </article>
+        </div>
+      </div>
+
+      <aside class="hero-side">
+        <div class="hero-visual">
+          <img
+            class="hero-fox"
+            src="Gemini_Generated_Image_j8y5npj8y5npj8y5.png"
+            alt="Ilustración temática de Historia para la práctica ECOEMS"
+          >
+        </div>
+      </aside>
+
+      <div class="filter-panel">
+        <h2>Filtra la práctica</h2>
+        <div class="control-block">
+          <span class="control-label">Guías</span>
+          <div class="guide-chips" id="guideChips"></div>
+        </div>
+        <div class="control-block">
+          <span class="control-label">Temas</span>
+          <div class="topic-chips hero-nav compact-topics" id="topicChips"></div>
+        </div>
+        <div class="sum" id="metrics"></div>
+      </div>
+    </section>
+
+    <section class="content" id="content"></section>
+    <section class="empty" id="empty" hidden>
+      <h2>No hay reactivos con ese filtro.</h2>
+      <p>Ajusta la guía o cambia de tema para volver a ver reactivos.</p>
+    </section>
+  </main>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Volver al inicio" title="Volver al inicio">↑</button>
+
+  <script src="historia-data.js?v=20260403a"></script>
+  <script src="historia-app.js?v=20260403a"></script>
+</body>
+</html>

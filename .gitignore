@@ -1,0 +1,15 @@
+node_modules/
+.vercel/
+.playwright-cli/
+playwright-report/
+test-results/
+qa-*.png
+verify-*.png
+historia-*.png
+guia*-page-*.png
+audit-*.png
+geografia-home-*.png
+snapshot-*.txt
+*.log
+Thumbs.db
+.DS_Store
