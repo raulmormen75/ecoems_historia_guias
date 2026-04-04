@@ -231,13 +231,13 @@
         </article>
       ` : ''}
       ${wrongAnalyses.length ? `
-        <article class="support solved-panel">
+        <article class="support solved-panel wrong-answers-panel">
           <div class="meta">Por qué las demás no corresponden</div>
           <div class="analysis-grid">${wrongAnalyses.map((item) => analysisCard(item)).join('')}</div>
         </article>
       ` : ''}
       ${narrative ? `
-        <article class="support solved-panel">
+        <article class="support solved-panel analysis-summary">
           <div class="meta">Análisis del reactivo</div>
           ${paragraphs(narrative)}
         </article>

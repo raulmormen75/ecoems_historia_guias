@@ -873,6 +873,21 @@ main{padding:22px 0 36px}
   border-color:rgba(43,47,143,.12);
 }
 
+.solved-panel.analysis-summary{
+  background:linear-gradient(180deg,rgba(246,246,248,.98),rgba(236,238,242,.98));
+  border-color:rgba(20,20,58,.12);
+}
+
+.solved-panel.wrong-answers-panel{
+  background:linear-gradient(180deg,rgba(255,246,246,.98),rgba(255,236,236,.98));
+  border-color:rgba(194,69,41,.16);
+}
+
+.wrong-answers-panel .analysis{
+  background:linear-gradient(180deg,rgba(255,241,241,.98),rgba(255,230,230,.98));
+  border-color:rgba(194,69,41,.14);
+}
+
 .solved-panel.final{
   border-color:rgba(17,125,33,.18);
   background:linear-gradient(180deg,rgba(246,255,244,.98),rgba(234,249,230,.96));
