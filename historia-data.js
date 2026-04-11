@@ -3,7 +3,7 @@ window.IFR_APP_DATA = {
     "title": "Instituto Fernando Ramírez · ECOEMS Historia",
     "subject": "Historia",
     "version": "1.0.0",
-    "generatedAt": "2026-04-03 15:33:20",
+    "generatedAt": "2026-04-10 23:58:31",
     "totalExercises": 24,
     "topicCount": 24
   },
@@ -214,7 +214,7 @@ window.IFR_APP_DATA = {
           "number": 53,
           "order": 1,
           "sourceOrder": 1,
-          "source": "Guía compartida por el usuario",
+          "source": "Guía de estudio ECOEMS",
           "topic": "Expansión comercial europea y apertura de nuevas rutas comerciales",
           "topicId": "expansion-comercial-europea-y-apertura-de-nuevas-rutas-comerciales",
           "question": "Razón por la que, a principios del siglo XVI, los europeos se vieron en la necesidad de abrir nuevas rutas comerciales.",
@@ -301,7 +301,7 @@ window.IFR_APP_DATA = {
           "number": 54,
           "order": 2,
           "sourceOrder": 2,
-          "source": "Guía compartida por el usuario",
+          "source": "Guía de estudio ECOEMS",
           "topic": "Revolución Francesa e independencia de México en el siglo XIX",
           "topicId": "revolucion-francesa-e-independencia-de-mexico-en-el-siglo-xix",
           "question": "País que se independizó en el siglo XIX y se inspiró en la Revolución Francesa.",
@@ -388,7 +388,7 @@ window.IFR_APP_DATA = {
           "number": 55,
           "order": 3,
           "sourceOrder": 3,
-          "source": "Guía compartida por el usuario",
+          "source": "Guía de estudio ECOEMS",
           "topic": "Primera Guerra Mundial",
           "topicId": "primera-guerra-mundial",
           "question": "La primera Guerra Mundial se desarrolló en varias etapas, una de ellas fue la guerra",
@@ -472,7 +472,7 @@ window.IFR_APP_DATA = {
           "number": 56,
           "order": 4,
           "sourceOrder": 4,
-          "source": "Guía compartida por el usuario",
+          "source": "Guía de estudio ECOEMS",
           "topic": "Consecuencias de la Primera Guerra Mundial",
           "topicId": "consecuencias-de-la-primera-guerra-mundial",
           "question": "Uno de los resultados de la Primera Guerra Mundial fue",
@@ -559,7 +559,7 @@ window.IFR_APP_DATA = {
           "number": 57,
           "order": 5,
           "sourceOrder": 5,
-          "source": "Guía compartida por el usuario",
+          "source": "Guía de estudio ECOEMS",
           "topic": "Guerra Fría",
           "topicId": "guerra-fria",
           "question": "La ________ hace referencia a las hostilidades no frontales entre el bloque socialista encabezado por la Unión Soviética y las potencias capitalistas representadas por Estados Unidos de América después de la Segunda Guerra Mundial.",
@@ -602,7 +602,7 @@ window.IFR_APP_DATA = {
             {
               "label": "A",
               "option": "crisis de los misiles",
-              "text": "Esta opción se refiere a un momento específico de tensión entre Estados Unidos y la Unión Soviética, ocurrido en Cuba en 1962.\nSí se relaciona con el tema porque pasó durante la Guerra Fría.\nPuede confundir porque fue uno de los episodios más conocidos de ese periodo.\nSe descarta porque no nombra todo el periodo de hostilidades no frontales, sino solo un hecho concreto."
+              "text": "Esta opción se refiere a un momento específico de tensión entre Estados Unidos y la Unión Soviética, ocurrido en Cuba en 1962.\nPuede generar confusión porque pasó durante la Guerra Fría.\nPuede confundir porque fue uno de los episodios más conocidos de ese periodo.\nSe descarta porque no nombra todo el periodo de hostilidades no frontales, sino solo un hecho concreto."
             },
             {
               "label": "B",
@@ -612,7 +612,7 @@ window.IFR_APP_DATA = {
             {
               "label": "C",
               "option": "cortina de hierro",
-              "text": "Esta opción se refiere a la división política e ideológica entre Europa occidental y Europa oriental.\nSí se relaciona con el tema porque expresa la separación entre los bloques.\nPuede confundir porque también es una expresión muy usada al hablar de la Guerra Fría.\nSe descarta porque no es el nombre del conflicto en sí, sino una expresión para describir la división entre zonas de influencia."
+              "text": "Esta opción se refiere a la división política e ideológica entre Europa occidental y Europa oriental.\nPuede generar confusión porque expresa la separación entre los bloques.\nPuede confundir porque también es una expresión muy usada al hablar de la Guerra Fría.\nSe descarta porque no es el nombre del conflicto en sí, sino una expresión para describir la división entre zonas de influencia."
             },
             {
               "label": "D",
@@ -642,7 +642,7 @@ window.IFR_APP_DATA = {
           "number": 58,
           "order": 6,
           "sourceOrder": 6,
-          "source": "Guía compartida por el usuario",
+          "source": "Guía de estudio ECOEMS",
           "topic": "Guerra del Golfo Pérsico",
           "topicId": "guerra-del-golfo-persico",
           "question": "La Guerra del Golfo Pérsico entre Iraq y una coalición internacional liderada por Estados Unidos surgió del interés por controlar ________ de esa zona del planeta.",
@@ -727,7 +727,7 @@ window.IFR_APP_DATA = {
           "number": 59,
           "order": 7,
           "sourceOrder": 7,
-          "source": "Guía compartida por el usuario",
+          "source": "Guía de estudio ECOEMS",
           "topic": "Iglesia novohispana e Inquisición en la Nueva España",
           "topicId": "iglesia-novohispana-e-inquisicion-en-la-nueva-espana",
           "question": "Fue el medio de mayor relevancia para mantener el poder ideológico de la Iglesia novohispana.",
@@ -813,7 +813,7 @@ window.IFR_APP_DATA = {
           "number": 60,
           "order": 8,
           "sourceOrder": 8,
-          "source": "Guía compartida por el usuario",
+          "source": "Guía de estudio ECOEMS",
           "topic": "Economía de la Nueva España",
           "topicId": "economia-de-la-nueva-espana",
           "question": "La producción de ________ fue determinante para la economía de la Nueva España.",
@@ -897,7 +897,7 @@ window.IFR_APP_DATA = {
           "number": 61,
           "order": 9,
           "sourceOrder": 9,
-          "source": "Guía compartida por el usuario",
+          "source": "Guía de estudio ECOEMS",
           "topic": "Guerra entre México y Estados Unidos de 1846 a 1847",
           "topicId": "guerra-entre-mexico-y-estados-unidos-de-1846-a-1847",
           "question": "Fueron factores que provocaron la guerra contra los Estados Unidos de América de 1846 a 1847.",
@@ -984,7 +984,7 @@ window.IFR_APP_DATA = {
           "number": 62,
           "order": 10,
           "sourceOrder": 10,
-          "source": "Guía compartida por el usuario",
+          "source": "Guía de estudio ECOEMS",
           "topic": "Constitución de 1917 y artículo 27",
           "topicId": "constitucion-de-1917-y-articulo-27",
           "question": "En la Constitución de 1917, el artículo 27 es uno de los más trascendentales porque",
@@ -1068,7 +1068,7 @@ window.IFR_APP_DATA = {
           "number": 63,
           "order": 11,
           "sourceOrder": 11,
-          "source": "Guía compartida por el usuario",
+          "source": "Guía de estudio ECOEMS",
           "topic": "Modernismo literario en México",
           "topicId": "modernismo-literario-en-mexico",
           "question": "Autor representativo del Modernismo literario en México.",
@@ -1152,7 +1152,7 @@ window.IFR_APP_DATA = {
           "number": 64,
           "order": 12,
           "sourceOrder": 12,
-          "source": "Guía compartida por el usuario",
+          "source": "Guía de estudio ECOEMS",
           "topic": "México contemporáneo, crisis política de 1988 e instituciones electorales",
           "topicId": "mexico-contemporaneo-crisis-politica-de-1988-e-instituciones-electorales",
           "question": "Institución que se crea para recobrar la legitimidad del régimen perdida en los comicios de 1988.",
@@ -1293,27 +1293,27 @@ window.IFR_APP_DATA = {
             {
               "label": "A",
               "option": "la burguesía",
-              "text": "Sí se relaciona con el tema. La burguesía fue la clase social urbana vinculada al comercio, los negocios y el dinero. Creció junto con las ciudades porque ahí se concentraban los intercambios comerciales y las actividades económicas. Esta opción se conserva."
+              "text": "La burguesía fue la clase social urbana vinculada al comercio, los negocios y el dinero. Creció junto con las ciudades porque ahí se concentraban los intercambios comerciales y las actividades económicas."
             },
             {
               "label": "B",
               "option": "el proletariado",
-              "text": "No corresponde. El proletariado se asocia sobre todo con la etapa industrial, cuando muchas personas trabajaban por salario en fábricas. Puede confundir porque también es una clase social urbana, pero no es la que se identifica primero con el comercio y la reproducción de la riqueza. Se descarta."
+              "text": "No corresponde. El proletariado se asocia sobre todo con la etapa industrial, cuando muchas personas trabajaban por salario en fábricas. Puede confundir porque también es una clase social urbana, pero no es la que se identifica primero con el comercio y la reproducción de la riqueza."
             },
             {
               "label": "C",
               "option": "los artesanos",
-              "text": "No corresponde como respuesta principal. Los artesanos trabajaban en talleres y producían objetos, pero no definen a la clase social ligada de manera más directa al gran comercio y a la acumulación de riqueza. Puede confundir porque también vivían en ciudades. Se descarta."
+              "text": "No corresponde como respuesta principal. Los artesanos trabajaban en talleres y producían objetos, pero no definen a la clase social ligada de manera más directa al gran comercio y a la acumulación de riqueza. Puede confundir porque también vivían en ciudades."
             },
             {
               "label": "D",
               "option": "los siervos",
-              "text": "No corresponde. Los siervos estaban ligados al campo y al régimen feudal, no al desarrollo urbano ni al comercio. Se descarta."
+              "text": "No corresponde. Los siervos estaban ligados al campo y al régimen feudal, no al desarrollo urbano ni al comercio."
             },
             {
               "label": "E",
               "option": "los nobles",
-              "text": "No corresponde. La nobleza tenía privilegios por nacimiento y posesión de tierras, pero no era la clase social identificada con el comercio urbano. Se descarta."
+              "text": "No corresponde. La nobleza tenía privilegios por nacimiento y posesión de tierras, pero no era la clase social identificada con el comercio urbano."
             }
           ],
           "argument": "La respuesta correcta es la burguesía porque esa clase social creció en las ciudades y se dedicó principalmente al comercio, las finanzas y otras actividades económicas que generaban riqueza. Por eso, cuando el reactivo habla de una clase vinculada al comercio y a la reproducción de la riqueza, se refiere a la burguesía.",
@@ -1387,27 +1387,27 @@ window.IFR_APP_DATA = {
             {
               "label": "A",
               "option": "Hume y Dilthey",
-              "text": "Hume sí se relaciona con la Ilustración, pero Dilthey no corresponde a ese mismo movimiento histórico. Dilthey es un pensador mucho más tardío. Puede confundir porque ambos son filósofos, pero no pertenecen al mismo momento. Se descarta."
+              "text": "Hume sí se relaciona con la Ilustración, pero Dilthey no corresponde a ese mismo movimiento histórico. Dilthey es un pensador mucho más tardío. Puede confundir porque ambos son filósofos, pero no pertenecen al mismo momento."
             },
             {
               "label": "B",
               "option": "Voltaire y Rousseau",
-              "text": "Sí corresponde. Ambos son autores muy reconocidos de la Ilustración. Sus ideas se relacionan con la razón, la crítica al absolutismo, la libertad y la organización de la sociedad. Esta opción se conserva."
+              "text": "Ambos son autores muy reconocidos de la Ilustración. Sus ideas se relacionan con la razón, la crítica al absolutismo, la libertad y la organización de la sociedad."
             },
             {
               "label": "C",
               "option": "Leonardo y Montesquieu",
-              "text": "Montesquieu sí se relaciona con la Ilustración, pero Leonardo no. Leonardo da Vinci pertenece al Renacimiento, no al movimiento ilustrado. Puede confundir porque ambos son personajes históricos europeos muy conocidos. Se descarta."
+              "text": "Montesquieu sí se relaciona con la Ilustración, pero Leonardo no. Leonardo da Vinci pertenece al Renacimiento, no al movimiento ilustrado. Puede confundir porque ambos son personajes históricos europeos muy conocidos."
             },
             {
               "label": "D",
               "option": "Fulton y Watt",
-              "text": "No corresponde. Fulton y Watt se asocian más con avances técnicos e industriales, no con los filósofos ilustrados. Se descarta."
+              "text": "No corresponde. Fulton y Watt se asocian más con avances técnicos e industriales, no con los filósofos ilustrados."
             },
             {
               "label": "E",
               "option": "Diderot y Payne",
-              "text": "Diderot sí se relaciona con la Ilustración. El problema es que la opción no presenta una pareja tan clara y precisa como la opción B. En este tipo de reactivo se busca la combinación más directamente reconocible de filósofos ilustrados. Por eso se descarta."
+              "text": "Diderot sí se relaciona con la Ilustración. El problema es que la opción no presenta una pareja tan clara y precisa como la opción B. En este tipo de reactivo se busca la combinación más directamente reconocible de filósofos ilustrados. Por eso"
             }
           ],
           "argument": "La respuesta correcta es Voltaire y Rousseau porque ambos fueron pensadores representativos de la Ilustración. Este movimiento defendía el uso de la razón para analizar la sociedad, la política y los derechos de las personas. Por eso, cuando el reactivo pregunta por filósofos de la Ilustración, esa es la opción más exacta.",
@@ -1482,27 +1482,27 @@ window.IFR_APP_DATA = {
             {
               "label": "A",
               "option": "estableció principios y derechos universales.",
-              "text": "Sí se relaciona directamente con la Revolución Francesa. Este proceso defendió ideas como libertad, igualdad, ciudadanía y derechos del ser humano. Por eso esta opción se conserva."
+              "text": "Sí se relaciona directamente con la Revolución Francesa. Este proceso defendió ideas como libertad, igualdad, ciudadanía y derechos del ser humano."
             },
             {
               "label": "B",
               "option": "dio un nuevo impulso a la monarquía.",
-              "text": "No corresponde. La Revolución Francesa cuestionó y debilitó la monarquía absoluta. No buscó fortalecerla, sino limitarla o terminar con ese poder. Se descarta."
+              "text": "No corresponde. La Revolución Francesa cuestionó y debilitó la monarquía absoluta. No buscó fortalecerla, sino limitarla o terminar con ese poder."
             },
             {
               "label": "C",
               "option": "permitió que Napoleón llegara al poder.",
-              "text": "Puede confundir porque Napoleón apareció después de la Revolución. Pero eso no explica su significado principal. El valor histórico más importante no fue abrir paso a Napoleón, sino difundir nuevas ideas políticas y sociales. Se descarta."
+              "text": "Puede confundir porque Napoleón apareció después de la Revolución. Pero eso no explica su significado principal. El valor histórico más importante no fue abrir paso a Napoleón, sino difundir nuevas ideas políticas y sociales."
             },
             {
               "label": "D",
               "option": "detuvo los intereses de Estados Unidos de América.",
-              "text": "No corresponde. La Revolución Francesa no se define por frenar a Estados Unidos. Ese no fue su sentido histórico principal. Se descarta."
+              "text": "No corresponde. La Revolución Francesa no se define por frenar a Estados Unidos. Ese no fue su sentido histórico principal."
             },
             {
               "label": "E",
               "option": "promovió la necesidad de una Revolución Industrial.",
-              "text": "No corresponde. La Revolución Industrial tuvo otro origen, sobre todo económico y técnico. No fue una consecuencia principal del triunfo revolucionario francés. Se descarta."
+              "text": "No corresponde. La Revolución Industrial tuvo otro origen, sobre todo económico y técnico. No fue una consecuencia principal del triunfo revolucionario francés."
             }
           ],
           "argument": "La respuesta correcta es la opción A porque la Revolución Francesa tuvo gran importancia al difundir principios como la libertad, la igualdad ante la ley y los derechos de las personas. Esas ideas influyeron en muchos movimientos políticos posteriores, incluso en procesos de independencia y en cambios de gobierno en distintos países.",
@@ -1574,27 +1574,27 @@ window.IFR_APP_DATA = {
             {
               "label": "A",
               "option": "jacobinos y girondinos",
-              "text": "No corresponde. Esos grupos pertenecen a la Revolución Francesa, no a la Revolución Rusa. Puede confundir porque también fueron grupos políticos enfrentados, pero de otro proceso histórico. Se descarta."
+              "text": "No corresponde. Esos grupos pertenecen a la Revolución Francesa, no a la Revolución Rusa. Puede confundir porque también fueron grupos políticos enfrentados, pero de otro proceso histórico."
             },
             {
               "label": "B",
               "option": "liberales y bolcheviques",
-              "text": "Puede confundir porque sí hubo liberales en Rusia, pero esa no es la pareja histórica más reconocida que suele pedirse en este tema. El reactivo apunta a los dos grupos principales del socialismo ruso que se enfrentaron por su forma de entender la revolución. Se descarta."
+              "text": "Puede confundir porque sí hubo liberales en Rusia, pero esa no es la pareja histórica más reconocida que suele pedirse en este tema. El reactivo apunta a los dos grupos principales del socialismo ruso que se enfrentaron por su forma de entender la revolución."
             },
             {
               "label": "C",
               "option": "federalistas y centralistas",
-              "text": "No corresponde. Esos grupos se relacionan con conflictos políticos de México en el siglo XIX, no con Rusia. Se descarta."
+              "text": "No corresponde. Esos grupos se relacionan con conflictos políticos de México en el siglo XIX, no con Rusia."
             },
             {
               "label": "D",
               "option": "bolcheviques y mencheviques",
-              "text": "Sí corresponde. Fueron las dos grandes corrientes surgidas del movimiento socialista ruso. Los bolcheviques defendían una revolución más radical y disciplinada, mientras que los mencheviques sostenían una postura más gradual. Esta opción se conserva."
+              "text": "Fueron las dos grandes corrientes surgidas del movimiento socialista ruso. Los bolcheviques defendían una revolución más radical y disciplinada, mientras que los mencheviques sostenían una postura más gradual."
             },
             {
               "label": "E",
               "option": "anarquistas y mencheviques",
-              "text": "Puede confundir porque el anarquismo existió como corriente ideológica, pero no es la pareja clásica que se estudia como grupos antagónicos centrales de la Revolución Rusa en este nivel. Se descarta."
+              "text": "Puede confundir porque el anarquismo existió como corriente ideológica, pero no es la pareja clásica que se estudia como grupos antagónicos centrales de la Revolución Rusa en este nivel."
             }
           ],
           "argument": "La respuesta correcta es bolcheviques y mencheviques porque esos fueron los grupos más identificados con la división del movimiento revolucionario ruso. En la enseñanza histórica básica de este tema, esa oposición es la más representativa para explicar las diferencias internas sobre cómo debía llevarse a cabo la revolución.",
@@ -1666,27 +1666,27 @@ window.IFR_APP_DATA = {
             {
               "label": "A",
               "option": "la invasión de Etiopía por Italia.",
-              "text": "No corresponde como inicio formal de la guerra mundial. Ese hecho ocurrió antes y se relaciona con la expansión italiana, pero no fue el evento que detonó oficialmente la Segunda Guerra Mundial en 1939. Se descarta."
+              "text": "No corresponde como inicio formal de la guerra mundial. Ese hecho ocurrió antes y se relaciona con la expansión italiana, pero no fue el evento que detonó oficialmente la Segunda Guerra Mundial en 1939."
             },
             {
               "label": "B",
               "option": "la tensa situación internacional.",
-              "text": "Puede confundir porque sí existía tensión en Europa, pero la opción es muy general. El reactivo pide el hecho específico que dio inicio a la guerra, no el contexto previo. Se descarta."
+              "text": "Puede confundir porque sí existía tensión en Europa, pero la opción es muy general. El reactivo pide el hecho específico que dio inicio a la guerra, no el contexto previo."
             },
             {
               "label": "C",
               "option": "los nuevos pactos internacionales.",
-              "text": "No corresponde. Los pactos fueron parte del ambiente político de la época, pero no fueron el hecho directo que comenzó la guerra. Se descarta."
+              "text": "No corresponde. Los pactos fueron parte del ambiente político de la época, pero no fueron el hecho directo que comenzó la guerra."
             },
             {
               "label": "D",
               "option": "el ataque alemán a Polonia.",
-              "text": "Sí corresponde. Alemania invadió Polonia el 1° de septiembre de 1939, y ese hecho provocó que otras potencias europeas declararan la guerra. Esta opción se conserva."
+              "text": "Alemania invadió Polonia el 1° de septiembre de 1939, y ese hecho provocó que otras potencias europeas declararan la guerra."
             },
             {
               "label": "E",
               "option": "el conflicto entre distintas etnias.",
-              "text": "No corresponde como explicación directa del inicio formal de la guerra. Es una idea demasiado amplia y no identifica el suceso histórico exacto. Se descarta."
+              "text": "No corresponde como explicación directa del inicio formal de la guerra. Es una idea demasiado amplia y no identifica el suceso histórico exacto."
             }
           ],
           "argument": "La respuesta correcta es la opción D porque el inicio formal de la Segunda Guerra Mundial se ubica el 1° de septiembre de 1939, cuando Alemania invadió Polonia. Ese ataque provocó la reacción de otras potencias, sobre todo Gran Bretaña y Francia, y convirtió el conflicto en una guerra de gran escala.",
@@ -1762,7 +1762,7 @@ window.IFR_APP_DATA = {
           },
           "hint": "Busca la combinación que hable de conexión mundial, comercio entre países, comunicación digital y organización económica internacional.",
           "whatToSolve": "Aquí hay que revisar cuáles enunciados sí describen rasgos propios de la globalización y luego elegir la combinación correcta.",
-          "analysisPrelude": "Primero revisamos una por una las afirmaciones:\nI. Interdependencia mundial.\nSí corresponde. La globalización conecta economías, mercados, información y países. Lo que pasa en un lugar afecta a otros. Se conserva.\nII. Tratados de libre comercio.\nSí corresponde. La globalización impulsa acuerdos comerciales entre países para facilitar intercambios. Se conserva.\nIII. Centralización del mercado.\nNo se toma como rasgo correcto en este reactivo. Puede confundir porque la economía mundial sí concentra poder en ciertos espacios, pero aquí no se maneja como característica principal del tema en la guía. Se descarta.\nIV. Desarrollo de Internet.\nSí corresponde. Internet aceleró la comunicación, la circulación de información y la conexión mundial. Se conserva.\nV. Intervencionismo estatal.\nNo corresponde. La globalización se asocia más con apertura de mercados y libre comercio, no con mayor control estatal. Se descarta.\nVI. Calentamiento global.\nPuede relacionarse con problemas mundiales actuales, pero no es una característica básica de la globalización en este reactivo. Es más bien una consecuencia o problema global. Se descarta.\nVII. Conformación de bloques económicos.\nSí corresponde. La creación de bloques y acuerdos regionales forma parte de la organización económica mundial. Se conserva.\nAhora revisamos las opciones:",
+          "analysisPrelude": "Primero revisamos una por una las afirmaciones:\nI. Interdependencia mundial.\nSí corresponde. La globalización conecta economías, mercados, información y países. Lo que pasa en un lugar afecta a otros.\nII. Tratados de libre comercio.\nSí corresponde. La globalización impulsa acuerdos comerciales entre países para facilitar intercambios.\nIII. Centralización del mercado.\nNo se toma como rasgo correcto en este reactivo. Puede confundir porque la economía mundial sí concentra poder en ciertos espacios, pero aquí no se maneja como característica principal del tema en la guía.\nIV. Desarrollo de Internet.\nSí corresponde. Internet aceleró la comunicación, la circulación de información y la conexión mundial.\nV. Intervencionismo estatal.\nNo corresponde. La globalización se asocia más con apertura de mercados y libre comercio, no con mayor control estatal.\nVI. Calentamiento global.\nPuede relacionarse con problemas mundiales actuales, pero no es una característica básica de la globalización en este reactivo. Es más bien una consecuencia o problema global.\nVII. Conformación de bloques económicos.\nSí corresponde. La creación de bloques y acuerdos regionales forma parte de la organización económica mundial.\nAhora revisamos las opciones:",
           "optionsAnalysis": [
             {
               "label": "A",
@@ -1772,7 +1772,7 @@ window.IFR_APP_DATA = {
             {
               "label": "B",
               "option": "I, II, IV y VII",
-              "text": "Sí corresponde porque reúne exactamente los enunciados que sí son características de la globalización. Se conserva."
+              "text": "Corresponde porque reúne exactamente los enunciados que sí son características de la globalización."
             },
             {
               "label": "C",
@@ -1862,27 +1862,27 @@ window.IFR_APP_DATA = {
             {
               "label": "A",
               "option": "maya",
-              "text": "No corresponde. La cultura maya destacó por sus avances en escritura, astronomía, matemáticas y arquitectura. Puede confundir porque también hicieron construcciones y arte muy importantes, pero no son los más identificados por esculturas monumentales de este tipo. Se descarta."
+              "text": "No corresponde. La cultura maya destacó por sus avances en escritura, astronomía, matemáticas y arquitectura. Puede confundir porque también hicieron construcciones y arte muy importantes, pero no son los más identificados por esculturas monumentales de este tipo."
             },
             {
               "label": "B",
               "option": "teotihuacana",
-              "text": "No corresponde. La cultura teotihuacana es más reconocida por su gran desarrollo urbano y por construcciones como las pirámides del Sol y de la Luna. Puede confundir porque también produjo arte y escultura, pero no es la respuesta más precisa aquí. Se descarta."
+              "text": "No corresponde. La cultura teotihuacana es más reconocida por su gran desarrollo urbano y por construcciones como las pirámides del Sol y de la Luna. Puede confundir porque también produjo arte y escultura, pero no es la respuesta más precisa aquí."
             },
             {
               "label": "C",
               "option": "mexica",
-              "text": "No corresponde. Los mexicas destacaron por su poder militar, su organización política y su capital Tenochtitlan. También hicieron escultura, pero no son la cultura más asociada en este reactivo con esculturas monumentales. Se descarta."
+              "text": "No corresponde. Los mexicas destacaron por su poder militar, su organización política y su capital Tenochtitlan. También hicieron escultura, pero no son la cultura más asociada en este reactivo con esculturas monumentales."
             },
             {
               "label": "D",
               "option": "olmeca",
-              "text": "Sí corresponde. La cultura olmeca es especialmente conocida por sus esculturas monumentales, sobre todo las cabezas colosales. Esta opción se conserva."
+              "text": "La cultura olmeca es especialmente conocida por sus esculturas monumentales, sobre todo las cabezas colosales."
             },
             {
               "label": "E",
               "option": "totonaca",
-              "text": "No corresponde. La cultura totonaca tuvo aportes importantes, pero no se distingue principalmente por esculturas monumentales como las olmecas. Se descarta."
+              "text": "No corresponde. La cultura totonaca tuvo aportes importantes, pero no se distingue principalmente por esculturas monumentales como las olmecas."
             }
           ],
           "argument": "La respuesta correcta es la opción D porque la cultura olmeca se hizo muy conocida por sus esculturas monumentales. Cuando en Historia de nivel ECOEMS se habla de este rasgo, casi siempre se refiere a las grandes cabezas colosales olmecas, que son una de sus manifestaciones artísticas más representativas.",
@@ -1955,7 +1955,7 @@ window.IFR_APP_DATA = {
           },
           "hint": "Busca las dos opciones que nombren instituciones coloniales directamente relacionadas con el control político y administrativo de la Nueva España.",
           "whatToSolve": "Aquí hay que identificar cuáles elementos de la lista sí fueron formas de gobierno o instituciones de administración en la Nueva España.",
-          "analysisPrelude": "I. Regencia.\nNo corresponde como forma propia de gobierno y administración de la Nueva España en este tema. La regencia se relaciona más con una forma temporal de gobierno en otros contextos. Se descarta.\nII. Audiencia.\nSí corresponde. La Audiencia fue una institución importante de gobierno y justicia en la Nueva España. Se conserva.\nIII. Principado.\nNo corresponde. La Nueva España no se organizó como principado. Se descarta.\nIV. Virreinato.\nSí corresponde. La Nueva España fue un virreinato, y esa fue una forma central de organización política y administrativa. Se conserva.\nV. Monarquía.\nPuede confundir porque la Nueva España dependía de la monarquía española. Pero aquí el reactivo pide formas de gobierno y administración novohispana más directas, y las instituciones más precisas son Audiencia y Virreinato. Por eso se descarta como respuesta final.\nAhora revisamos las combinaciones:",
+          "analysisPrelude": "I. Regencia.\nNo corresponde como forma propia de gobierno y administración de la Nueva España en este tema. La regencia se relaciona más con una forma temporal de gobierno en otros contextos.\nII. Audiencia.\nSí corresponde. La Audiencia fue una institución importante de gobierno y justicia en la Nueva España.\nIII. Principado.\nNo corresponde. La Nueva España no se organizó como principado.\nIV. Virreinato.\nSí corresponde. La Nueva España fue un virreinato, y esa fue una forma central de organización política y administrativa.\nV. Monarquía.\nPuede confundir porque la Nueva España dependía de la monarquía española. Pero aquí el reactivo pide formas de gobierno y administración novohispana más directas, y las instituciones más precisas son Audiencia y Virreinato. Por eso se descarta como respuesta final.\nAhora revisamos las combinaciones:",
           "optionsAnalysis": [
             {
               "label": "A",
@@ -1970,17 +1970,17 @@ window.IFR_APP_DATA = {
             {
               "label": "C",
               "option": "II y IV",
-              "text": "Sí corresponde, porque Audiencia y Virreinato sí fueron formas de organización y administración de la Nueva España. Esta opción se conserva."
+              "text": "Corresponde porque Audiencia y Virreinato sí fueron formas de organización y administración de la Nueva España."
             },
             {
               "label": "D",
               "option": "II y V",
-              "text": "Puede confundir porque incluye Audiencia, pero Monarquía es demasiado general frente a lo que pide el reactivo. Se descarta."
+              "text": "Puede confundir porque incluye Audiencia, pero Monarquía es demasiado general frente a lo que pide el reactivo."
             },
             {
               "label": "E",
               "option": "IV y V",
-              "text": "Puede confundir porque Virreinato sí es correcto, pero Monarquía vuelve a ser una forma demasiado general. Se descarta."
+              "text": "Puede confundir porque Virreinato sí es correcto, pero Monarquía vuelve a ser una forma demasiado general."
             }
           ],
           "argument": "La respuesta correcta es la opción C porque la Audiencia y el Virreinato sí fueron instituciones y formas de organización política y administrativa de la Nueva España. La Audiencia cumplía funciones de gobierno y justicia, y el Virreinato era la estructura principal mediante la cual la Corona española gobernaba este territorio.",
@@ -2057,27 +2057,27 @@ window.IFR_APP_DATA = {
             {
               "label": "A",
               "option": "el despotismo ilustrado",
-              "text": "No corresponde como característica económica. El despotismo ilustrado fue más bien una idea política de gobierno. Puede confundir porque se relaciona con los Borbones, pero no es una medida económica en sí. Se descarta."
+              "text": "No corresponde como característica económica. El despotismo ilustrado fue más bien una idea política de gobierno. Puede confundir porque se relaciona con los Borbones, pero no es una medida económica en sí."
             },
             {
               "label": "B",
               "option": "la creación de intendencia",
-              "text": "Puede confundir mucho porque sí fue parte de las reformas borbónicas. El problema es que la intendencia fue sobre todo una medida administrativa y de control del territorio, no una característica económica directa. Se descarta."
+              "text": "Puede confundir mucho porque sí fue parte de las reformas borbónicas. El problema es que la intendencia fue sobre todo una medida administrativa y de control del territorio, no una característica económica directa."
             },
             {
               "label": "C",
               "option": "la expulsión de los jesuitas",
-              "text": "No corresponde. Ese fue un hecho político y religioso, no una característica económica. Se descarta."
+              "text": "No corresponde. Ese fue un hecho político y religioso, no una característica económica."
             },
             {
               "label": "D",
               "option": "el pago de intereses por préstamos",
-              "text": "No corresponde. Esa opción no identifica una reforma borbónica característica de la Nueva España en este tema. Se descarta."
+              "text": "No corresponde. Esa opción no identifica una reforma borbónica característica de la Nueva España en este tema."
             },
             {
               "label": "E",
               "option": "el desarrollo industrial",
-              "text": "Es la opción que mejor encaja con lo que pregunta el reactivo, porque es la única planteada en sentido económico. Por eso esta opción se conserva."
+              "text": "Es la opción que mejor encaja con lo que pregunta el reactivo, porque es la única planteada en sentido económico."
             }
           ],
           "argument": "La respuesta correcta es la opción E porque el reactivo pide una característica económica. Entre todas las opciones, las demás se refieren a aspectos políticos, administrativos o religiosos. Aunque las reformas borbónicas también tuvieron medidas de reorganización administrativa, en este reactivo la opción que corresponde por su sentido económico es desarrollo industrial.",
@@ -2152,7 +2152,7 @@ window.IFR_APP_DATA = {
           },
           "hint": "Ubica primero el hecho que claramente ocurrió antes de Maximiliano. Si lo descartas, varias combinaciones se caen solas.",
           "whatToSolve": "Aquí hay que revisar uno por uno cuáles hechos sí ocurrieron durante el imperio de Maximiliano y después elegir la combinación correcta.",
-          "analysisPrelude": "Primero analizamos cada enunciado:\nI. Reconocimiento de la separación de la Iglesia y el Estado.\nSí corresponde. Maximiliano no devolvió completamente el poder político a la Iglesia y mantuvo parte de la orientación liberal en ese tema. Se conserva.\nII. Adopción de la Constitución de 1857.\nNo corresponde. Maximiliano no gobernó bajo la Constitución de 1857. Su régimen fue imperial, no republicano constitucional en ese sentido. Se descarta.\nIII. Separación de Texas.\nNo corresponde. La separación de Texas ocurrió mucho antes, en el siglo XIX, antes del imperio de Maximiliano. Se descarta.\nIV. Promulgación de leyes que favorecían a los indígenas.\nSí corresponde. Durante el imperio de Maximiliano hubo medidas con un discurso de protección hacia sectores indígenas. Se conserva.\nV. Promoción de la investigación científica.\nSí corresponde. En ese periodo también se impulsaron actividades científicas y culturales. Se conserva.\nAhora revisamos las opciones:",
+          "analysisPrelude": "Primero analizamos cada enunciado:\nI. Reconocimiento de la separación de la Iglesia y el Estado.\nSí corresponde. Maximiliano no devolvió completamente el poder político a la Iglesia y mantuvo parte de la orientación liberal en ese tema.\nII. Adopción de la Constitución de 1857.\nNo corresponde. Maximiliano no gobernó bajo la Constitución de 1857. Su régimen fue imperial, no republicano constitucional en ese sentido.\nIII. Separación de Texas.\nNo corresponde. La separación de Texas ocurrió mucho antes, en el siglo XIX, antes del imperio de Maximiliano.\nIV. Promulgación de leyes que favorecían a los indígenas.\nSí corresponde. Durante el imperio de Maximiliano hubo medidas con un discurso de protección hacia sectores indígenas.\nV. Promoción de la investigación científica.\nSí corresponde. En ese periodo también se impulsaron actividades científicas y culturales.\nAhora revisamos las opciones:",
           "optionsAnalysis": [
             {
               "label": "A",
@@ -2162,7 +2162,7 @@ window.IFR_APP_DATA = {
             {
               "label": "B",
               "option": "I, IV y V",
-              "text": "Sí corresponde, porque los tres enunciados sí se ubican en ese periodo. Esta opción se conserva."
+              "text": "Corresponde porque los tres enunciados sí se ubican en ese periodo."
             },
             {
               "label": "C",
@@ -2252,27 +2252,27 @@ window.IFR_APP_DATA = {
             {
               "label": "A",
               "option": "el momento de mayor poder del villismo y del zapatismo.",
-              "text": "Sí corresponde. La Convención de Aguascalientes fue el momento en que villistas y zapatistas tuvieron mayor fuerza política y militar frente a otros grupos revolucionarios. Esta opción se conserva."
+              "text": "La Convención de Aguascalientes fue el momento en que villistas y zapatistas tuvieron mayor fuerza política y militar frente a otros grupos revolucionarios."
             },
             {
               "label": "B",
               "option": "el ascenso político del grupo sonorense.",
-              "text": "No corresponde. El grupo sonorense tomó mayor fuerza después, no en la Convención de Aguascalientes. Se descarta."
+              "text": "No corresponde. El grupo sonorense tomó mayor fuerza después, no en la Convención de Aguascalientes."
             },
             {
               "label": "C",
               "option": "la marginación de los campesinos del poder.",
-              "text": "No corresponde como idea principal del hecho. De hecho, en ese momento los grupos con base popular y campesina, sobre todo el zapatismo, tuvieron presencia importante. Se descarta."
+              "text": "No corresponde como idea principal del hecho. De hecho, en ese momento los grupos con base popular y campesina, sobre todo el zapatismo, tuvieron presencia importante."
             },
             {
               "label": "D",
               "option": "el auge del carrancismo en la Revolución.",
-              "text": "No corresponde. La Convención de Aguascalientes se dio precisamente en un contexto de tensión con Carranza. No fue el auge del carrancismo. Se descarta."
+              "text": "No corresponde. La Convención de Aguascalientes se dio precisamente en un contexto de tensión con Carranza. No fue el auge del carrancismo."
             },
             {
               "label": "E",
               "option": "la derrota total del movimiento maderista.",
-              "text": "No corresponde. El maderismo pertenece a una etapa previa de la Revolución, y eso no define el significado de la Convención. Se descarta."
+              "text": "No corresponde. El maderismo pertenece a una etapa previa de la Revolución, y eso no define el significado de la Convención."
             }
           ],
           "argument": "La respuesta correcta es la opción A porque la Convención de Aguascalientes reunió a varias fuerzas revolucionarias, pero en ese momento quienes alcanzaron mayor presencia y peso político fueron el villismo y el zapatismo. Por eso se entiende como el punto de mayor fuerza de esos dos movimientos dentro de la Revolución mexicana.",
@@ -2344,27 +2344,27 @@ window.IFR_APP_DATA = {
             {
               "label": "A",
               "option": "democratización y el libre comercio.",
-              "text": "Puede confundir porque el libre comercio sí se relaciona con el modelo neoliberal. El problema es que la democratización es un cambio político, no una consecuencia económica directa. Se descarta."
+              "text": "Puede confundir porque el libre comercio sí se relaciona con el modelo neoliberal. El problema es que la democratización es un cambio político, no una consecuencia económica directa."
             },
             {
               "label": "B",
               "option": "descentralización y la reforma del Estado.",
-              "text": "No corresponde como la mejor respuesta. Son cambios político administrativos, pero el reactivo pide consecuencias económicas más claras. Se descarta."
+              "text": "No corresponde como la mejor respuesta. Son cambios político administrativos, pero el reactivo pide consecuencias económicas más claras."
             },
             {
               "label": "C",
               "option": "privatización y el libre comercio.",
-              "text": "Sí corresponde. El modelo neoliberal en México se asocia directamente con la venta o reducción de empresas del Estado y con la apertura comercial hacia el exterior. Esta opción se conserva."
+              "text": "El modelo neoliberal en México se asocia directamente con la venta o reducción de empresas del Estado y con la apertura comercial hacia el exterior."
             },
             {
               "label": "D",
               "option": "libertad de expresión y la participación ciudadana.",
-              "text": "No corresponde. Esos son temas políticos y sociales, no consecuencias económicas centrales del neoliberalismo. Se descarta."
+              "text": "No corresponde. Esos son temas políticos y sociales, no consecuencias económicas centrales del neoliberalismo."
             },
             {
               "label": "E",
               "option": "reforma constitucional y la globalización.",
-              "text": "Puede confundir porque la globalización sí se relaciona con este periodo. Pero la reforma constitucional es demasiado general y no expresa con precisión las consecuencias económicas más características. Se descarta."
+              "text": "Puede confundir porque la globalización sí se relaciona con este periodo. Pero la reforma constitucional es demasiado general y no expresa con precisión las consecuencias económicas más características."
             }
           ],
           "argument": "La respuesta correcta es la opción C porque el modelo neoliberal en México impulsó dos cambios económicos muy visibles: la privatización, es decir, el paso de empresas o actividades del Estado al sector privado, y el libre comercio, que abrió más la economía mexicana al mercado internacional. Esos dos rasgos son los más representativos en este tema.",

@@ -29,10 +29,70 @@
       .toLowerCase();
   }
 
-  function paragraphs(text) {
+  function cleanDisplayLine(line, context = 'generic') {
+    let cleaned = String(line || '')
+      .replace(/[✅❌⚠]/g, ' ')
+      .replace(/^\s*opci[oó]n\s+(correcta|incorrecta)\s*:?\s*/i, '')
+      .replace(/\bcontentReference\b/gi, '')
+      .replace(/gu[ií]a compartida por el usuario/gi, 'Guía de estudio ECOEMS')
+      .replace(/como me lo compartiste/gi, 'con base en la guía de estudio')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+    if (!cleaned) return '';
+    if (/^(Se conserva|Se descarta)\.?$/i.test(cleaned)) return '';
+
+    if (context === 'correct') {
+      cleaned = cleaned
+        .replace(/^Sí corresponde,?\s*porque\s*/i, 'Corresponde porque ')
+        .replace(/^Sí puede ser\.?\s*/i, 'Corresponde porque ')
+        .replace(/^Sí es\.?\s*/i, 'Corresponde porque ')
+        .replace(/^Sí se relaciona con el tema,?\s*porque\s*/i, 'Corresponde porque ')
+        .replace(/^Sí se relaciona,?\s*porque\s*/i, 'Corresponde porque ')
+        .replace(/^Sí se relaciona con el tema\.?\s*/i, '')
+        .replace(/^Sí corresponde\.?\s*/i, '')
+        .replace(/^Sí se relaciona con el tema porque\s*/i, 'Corresponde porque ')
+        .replace(/^Sí se relaciona porque\s*/i, 'Corresponde porque ')
+        .replace(/\s+Se conserva\.?$/i, '')
+        .replace(/\s*(?:Por eso\s+)?esta opción(?:\s+se conserva)?\.?$/i, '');
+    }
+
+    if (context === 'incorrect') {
+      cleaned = cleaned
+        .replace(/^Sí puede ser\.?\s*/i, 'Puede generar confusión porque ')
+        .replace(/^Sí es\.?\s*/i, 'Puede generar confusión porque ')
+        .replace(/^Sí corresponde\.?\s*/i, 'Puede generar confusión porque ')
+        .replace(/^Sí se relaciona con el tema porque\s*/i, 'Puede generar confusión porque ')
+        .replace(/^Sí se relaciona porque\s*/i, 'Puede generar confusión porque ')
+        .replace(/^No puede ser\.?\s*/i, 'No corresponde. ')
+        .replace(/^No es la mejor opción\.?\s*/i, 'No corresponde. ')
+        .replace(/\s+Se descarta\.?$/i, '');
+    }
+
+    if (context === 'generic') {
+      cleaned = cleaned
+        .replace(/^Sí puede ser\.?\s*/i, 'Sí corresponde. ')
+        .replace(/^Sí es\.?\s*/i, 'Sí corresponde. ')
+        .replace(/^No puede ser\.?\s*/i, 'No corresponde. ')
+        .replace(/^No es la mejor opción\.?\s*/i, 'No corresponde. ')
+        .replace(/\s+Se conserva\.?$/i, '')
+        .replace(/\s+Se descarta\.?$/i, '');
+    }
+
+    return cleaned;
+  }
+
+  function paragraphs(text, context = 'generic') {
     const blocks = String(text || '')
       .split(/\n{2,}/)
-      .map((block) => block.trim())
+      .map((block) =>
+        block
+          .split('\n')
+          .map((line) => cleanDisplayLine(line, context))
+          .filter(Boolean)
+          .join('\n')
+          .trim()
+      )
       .filter(Boolean);
 
     if (!blocks.length) return '';
@@ -44,6 +104,7 @@
 
   function questionMarkup(lines) {
     return `<div class="question">${(Array.isArray(lines) ? lines : [])
+      .map((line) => cleanDisplayLine(line))
       .filter(Boolean)
       .map((line) => `<p>${esc(line)}</p>`)
       .join('')}</div>`;
@@ -169,27 +230,34 @@
     if (status === 'wrong') {
       return `<section class="attempt-state warning">
         <div class="meta">Intenta de nuevo</div>
-        <p>Revisa la pista y vuelve a intentarlo 🧠</p>
+        <p>Revisa la pista y vuelve a intentarlo.</p>
       </section>`;
     }
 
     if (status === 'correct') {
       return `<section class="attempt-state success">
         <div class="meta">Acierto confirmado</div>
-        <p>Bien resuelto ✅ Ahora revisa por qué las demás no corresponden.</p>
+        <p>Bien resuelto. Ahora revisa por qué las demás no corresponden.</p>
       </section>`;
     }
 
     return '';
   }
 
-  function analysisCard(item, compact = false) {
-    return `<article class="analysis${compact ? ' compact' : ''}">
+  function analysisCard(item, tone = 'neutral', compact = false) {
+    const marker = tone === 'correct'
+      ? { emoji: '✅', label: 'Opción correcta' }
+      : { emoji: '❌', label: 'Opción incorrecta' };
+
+    return `<article class="analysis analysis-${esc(tone)}${compact ? ' compact' : ''}">
       <div class="analysis-head">
         <span class="badge">${esc(item.label)}</span>
-        <span>${esc(item.option || `Opción ${item.label}`)}</span>
+        <div class="analysis-copy">
+          <span class="analysis-option">${esc(cleanDisplayLine(item.option || `Opción ${item.label}`))}</span>
+          <span class="analysis-state analysis-state-${esc(tone)}">${marker.emoji} ${esc(marker.label)}</span>
+        </div>
       </div>
-      ${paragraphs(item.text)}
+      ${paragraphs(item.text, tone)}
     </article>`;
   }
 
@@ -200,7 +268,11 @@
     return `<section class="stimulus-panel" data-reactive-type="${esc(exercise.reactiveType)}">
       <div class="meta">Enunciados del reactivo</div>
       <div class="stimulus-list">
-        ${romanStatements.map((statement) => `<article class="stimulus-item"><p>${esc(statement)}</p></article>`).join('')}
+        ${romanStatements
+          .map((statement) => cleanDisplayLine(statement))
+          .filter(Boolean)
+          .map((statement) => `<article class="stimulus-item"><p>${esc(statement)}</p></article>`)
+          .join('')}
       </div>
     </section>`;
   }
@@ -227,13 +299,13 @@
       ${correctAnalysis ? `
         <article class="support solved-panel final">
           <div class="meta">Por qué la correcta sí corresponde</div>
-          ${analysisCard(correctAnalysis, true)}
+          ${analysisCard(correctAnalysis, 'correct', true)}
         </article>
       ` : ''}
       ${wrongAnalyses.length ? `
         <article class="support solved-panel wrong-answers-panel">
           <div class="meta">Por qué las demás no corresponden</div>
-          <div class="analysis-grid">${wrongAnalyses.map((item) => analysisCard(item)).join('')}</div>
+          <div class="analysis-grid">${wrongAnalyses.map((item) => analysisCard(item, 'incorrect')).join('')}</div>
         </article>
       ` : ''}
       ${narrative ? `

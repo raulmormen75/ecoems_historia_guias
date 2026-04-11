@@ -151,6 +151,118 @@ function joinLines(lines) {
     .trim();
 }
 
+function stripVisualMarkers(text) {
+  return String(text || '')
+    .replace(/[✅❌⚠]/g, ' ')
+    .replace(/^\s*opci[oó]n\s+(correcta|incorrecta)\s*:?\s*/i, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+}
+
+function sanitizeSourceText(text) {
+  return cleanInline(stripVisualMarkers(text))
+    .replace(/gu[ií]a compartida por el usuario/gi, 'Guía de estudio ECOEMS')
+    .replace(/como me lo compartiste/gi, 'con base en la guía de estudio');
+}
+
+function normalizeEducationalLine(line, context = 'generic') {
+  let cleaned = cleanInline(stripVisualMarkers(line))
+    .replace(/gu[ií]a compartida por el usuario/gi, 'Guía de estudio ECOEMS')
+    .replace(/como me lo compartiste/gi, 'con base en la guía de estudio')
+    .replace(/\bcontentReference\b/gi, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+
+  if (!cleaned) return '';
+  if (/^(Se conserva|Se descarta)\.?$/i.test(cleaned)) return '';
+
+  if (context === 'correct') {
+    cleaned = cleaned
+      .replace(/^Sí corresponde,?\s*porque\s*/i, 'Corresponde porque ')
+      .replace(/^Sí puede ser\.?\s*/i, 'Corresponde porque ')
+      .replace(/^Sí es\.?\s*/i, 'Corresponde porque ')
+      .replace(/^Sí se relaciona con el tema,?\s*porque\s*/i, 'Corresponde porque ')
+      .replace(/^Sí se relaciona,?\s*porque\s*/i, 'Corresponde porque ')
+      .replace(/^Sí se relaciona con el tema\.?\s*/i, '')
+      .replace(/^Sí corresponde\.?\s*/i, '')
+      .replace(/^Sí se relaciona con el tema porque\s*/i, 'Corresponde porque ')
+      .replace(/^Sí se relaciona porque\s*/i, 'Corresponde porque ')
+      .replace(/\s+Se conserva\.?$/i, '')
+      .replace(/\s*(?:Por eso\s+)?esta opción(?:\s+se conserva)?\.?$/i, '');
+  }
+
+  if (context === 'incorrect') {
+    cleaned = cleaned
+      .replace(/^Sí puede ser\.?\s*/i, 'Puede generar confusión porque ')
+      .replace(/^Sí es\.?\s*/i, 'Puede generar confusión porque ')
+      .replace(/^Sí corresponde\.?\s*/i, 'Puede generar confusión porque ')
+      .replace(/^Sí se relaciona con el tema porque\s*/i, 'Puede generar confusión porque ')
+      .replace(/^Sí se relaciona porque\s*/i, 'Puede generar confusión porque ')
+      .replace(/^No puede ser\.?\s*/i, 'No corresponde. ')
+      .replace(/^No es la mejor opción\.?\s*/i, 'No corresponde. ')
+      .replace(/\s+Se descarta\.?$/i, '');
+  }
+
+  if (context === 'generic') {
+    cleaned = cleaned
+      .replace(/^Sí puede ser\.?\s*/i, 'Sí corresponde. ')
+      .replace(/^Sí es\.?\s*/i, 'Sí corresponde. ')
+      .replace(/^No puede ser\.?\s*/i, 'No corresponde. ')
+      .replace(/^No es la mejor opción\.?\s*/i, 'No corresponde. ')
+      .replace(/\s+Se conserva\.?$/i, '')
+      .replace(/\s+Se descarta\.?$/i, '');
+  }
+
+  return cleaned.replace(/\s{2,}/g, ' ').trim();
+}
+
+function normalizeEducationalText(text, context = 'generic') {
+  return joinLines(
+    String(text || '')
+      .replace(/\r/g, '')
+      .split('\n')
+      .map((line) => normalizeEducationalLine(line, context))
+  );
+}
+
+function normalizeExerciseContent(exercise) {
+  const correctLabel = exercise.correctOption?.label;
+  const questionLines = (exercise.questionLines || [])
+    .map((line) => normalizeEducationalLine(line))
+    .filter(Boolean);
+  const stimulus = exercise.stimulus || { leadLines: [], romanStatements: [], sourceNotes: [] };
+
+  return {
+    ...exercise,
+    source: sanitizeSourceText(exercise.source),
+    question: joinLines(questionLines),
+    questionLines,
+    stimulus: {
+      ...stimulus,
+      leadLines: (stimulus.leadLines || []).map((line) => normalizeEducationalLine(line)).filter(Boolean),
+      romanStatements: (stimulus.romanStatements || []).map((line) => normalizeEducationalLine(line)).filter(Boolean),
+      sourceNotes: (stimulus.sourceNotes || []).map((line) => normalizeEducationalLine(line)).filter(Boolean)
+    },
+    options: (exercise.options || []).map((option) => ({
+      ...option,
+      text: normalizeEducationalText(option.text)
+    })),
+    correctOption: {
+      ...exercise.correctOption,
+      text: normalizeEducationalText(exercise.correctOption?.text)
+    },
+    hint: normalizeEducationalText(exercise.hint),
+    whatToSolve: normalizeEducationalText(exercise.whatToSolve),
+    analysisPrelude: normalizeEducationalText(exercise.analysisPrelude),
+    argument: normalizeEducationalText(exercise.argument),
+    optionsAnalysis: (exercise.optionsAnalysis || []).map((item) => ({
+      ...item,
+      option: normalizeEducationalText(item.option),
+      text: normalizeEducationalText(item.text, item.label === correctLabel ? 'correct' : 'incorrect')
+    }))
+  };
+}
+
 function buildTags(topic) {
   const tokens = normalizeForToken(topic)
     .split(/[^a-z0-9]+/)
@@ -555,6 +667,7 @@ function parseExercise(blockLines, guide, order) {
 
   exercise.descriptorVisual = getDescriptorVisual(exercise.reactiveType, exercise.stimulus);
   exercise = applyVerifiedOverrides(guide.id, number, exercise, rawOptionMap);
+  exercise = normalizeExerciseContent(exercise);
 
   return exercise;
 }
